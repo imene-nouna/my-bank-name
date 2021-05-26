@@ -10,9 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
+@RestController
+@RequestMapping("/api/ligne-bancaire")
 public class LigneBancaireService {
 
     @Autowired
     LigneBancaireRepository ligneBancaireRepository;
 
+
+    @GetMapping
+    public List<LigneBancaire> lignes(){
+        return ligneBancaireRepository.findAll();
+    }
 }
