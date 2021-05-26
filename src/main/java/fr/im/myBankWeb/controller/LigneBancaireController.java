@@ -18,11 +18,11 @@ public class LigneBancaireController {
 
     LigneBancaireService ligneService;
 
-    @GetMapping
+  //  @GetMapping
 //    public List<LigneBancaire> lignes() { return ligneService.findAll(); }
 
-    public List<LigneBancaire> queryForCompte( String id){
-        return ligneService.fin
-    }
+//    public List<LigneBancaire> queryForCompte( String id){
+//        return ligneService.fin
+//    }
 
 }
